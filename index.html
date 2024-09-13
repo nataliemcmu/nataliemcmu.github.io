@@ -111,8 +111,8 @@ Forms
             </div>
         </div>
     <hr><!--horizontal line-->
-    <h2>Sign up for my newsletter!</h2>
-    <form action="" method=""> <!--Two attributes-->
+    <form action="" method="" id="signup"> <!--Two attributes-->
+        <h2>Sign up for my newsletter!</h2>
         <label for="first_name">First Name: </label>
         <input type="text" id="first_name" name="first_name" required> <!--a required field in the form-->
         <br> <!--stacks fields vertically using a break-->
@@ -126,13 +126,12 @@ Forms
         <input type="password" name="password" id="password">
         <br>
 
-        <label for="favourite_animal">Favourite Animal:</label>
-        <input type="radio" name="favourite_animal" id="dog" value="dog">
-        <label for="dog">Dog</label>
-        <input type="radio" name="favourite_animal" id="cat" value="cat">
-        <label for="cat">Cat</label>
-        <input type="radio" name="favourite_animal" id="headgehog" value="headgehog">
-        <label for="headgehog">Hedgehog</label>
+        <label for="updates" id="updates">Would you like to recieve article updates?:</label>
+        <input type="radio" name="updates" id="" value="yes">
+        <label for="yes">Yes please!</label>
+        <input type="radio" name="updates" id="no" value="no">
+        <label for="no">No thanks!</label>
+        
         <br>
 
         <label for="country">Country</label>
@@ -143,15 +142,6 @@ Forms
             <option value="northern_ireland">Northern Ireland</option>
         </select>
         <br>
-
-        <label for="bio">Biography</label>
-        <textarea name="bio" id="bio" cols="30" rows="5"></textarea> <!-- creates a sized textbox -->
-        <br>
-
-        <input type="checkbox" id="subscribe" name="subscribe">
-        <label for="subscribe">Subscribe to our newsletter!</label>
-        <br>
-
         <input type="submit" value="Send!">
     </form>
     

@@ -2,7 +2,7 @@ body {
     font-family: "Copse", sans-serif;
     margin: 0px;
     font-size: 1.8vw;
-    background-color: #f7bfb4;
+    background-color: #f7c2cb;
 }
 /*# for id*/
 #logo {
@@ -34,7 +34,7 @@ ul {
 
 body > header {
     background-color: #58656D90;
-    color: #8de2dc;
+    color: #8dc2dc;
     height: 12vh;
     /* Using FlexBox to organise logo and nav elements */
     /* moves elements horizontally together */
@@ -80,8 +80,9 @@ body > header > nav > ul {
     padding: 12px;
     /* making the buttons */
     border: 1px solid #f7bfb4;
+    background-color: #8dc2dc;
     color: black;
-    border-radius: 8%;
+    border-radius: 10%;
 }
 
 body > main article {
@@ -105,15 +106,9 @@ body > main article {
 }
 
 
-/* centering the form */
-form {
-    text-align: center;
-}
 
-h2 {
-    text-align: left;
-    margin-left: 4px;
-}
+
+
 
 
 
@@ -121,6 +116,7 @@ body > footer {
     background-color: #58656D90;
     /* flexbox for footer */
     display: flex;
+    justify-content: space-evenly;
 }
 
 
@@ -129,3 +125,21 @@ img {
     border-radius: 50%
 }
 
+#signup {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #8dc2dc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#signup >  input{
+    background-color: whitesmoke;
+}
+
+#updates {
+    display: flex;
+}

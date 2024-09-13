@@ -1,0 +1,183 @@
+<!--Miscalanious Notes
+- Hover over tags to see definition
+- Use TAB to use emmet abbraviation
+- use lorem for a paragraph of text (type the number of words you'd like afterwards)
+- Different text tags, i.e. <blockquote>, <cite> allow text to be simply formatted
+- press the arrows on the left (by the line numbers) to collapse tags :)))
+
+Forms
+- Forms are usually processed by a seperate server. 
+- a 'model' is an element that pops up over the website
+- the label connects the text of a question in the form with the related box
+- the value is what text goes in the button or drop down menu
+- type="email" checks if the text is an email address
+- type="passowrd" hides the text being typed :)
+- type="radio" gives us a clickable 'radio button' (i.e. you can choose one answer only for the quesiton)
+- type="submit" creates a button to send the form off
+- you can link radio buttons to the same question by making sure the name="" is the same for each button
+- use 'select' and 'option' for a drop down selection
+- notice how the label text goes before some tags (like select) but after other tags (like text). This is due to which bit you want to show when you hover over or click the label
+- notice that when you send the form, the information being sent goes into the URL :)
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Copse&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Copse&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrightBlogSite</title>
+</head>
+
+<body>
+    <header id="main-header">
+        <!-- the content of the header (stuff at the top of the website) goes here :) -->
+        <h1 id="logo">Natalie's BrightBlog</h1> <!-- You could quickly make this section below with 'nav>ul>li*3>a'-->
+        <!--<h1> is the highest in the heirachy of header tags-->
+        <nav>
+            <!-- this is the navigation bar -->
+            <!-- this is using the list method (you can use unordered list or ordered list (ul or ol)) -->
+            <ul id="nav-ul">
+                <li> <!--List elements-->
+                    <a href="https://soundcloud.com/natalatalie" target="_blank" class="navbutton"> My music</a>
+                </li>
+                <li> 
+                    <a href="https://soundcloud.com/natalatalie" target="_blank" class="navbutton">My Twitter</a> 
+                </li>
+                <li>
+                    <a href="https://youtu.be/nHFAuy6w3oc?si=g7pez1KYnM05NIgV" target="_blank" class="navbutton">About</a>
+                </li>
+            </ul> 
+        </nav>
+    </header>
+    <main>
+        <!-- main content of the website can go here :) -->
+        <div id="main-content">
+            <aside><!-- for filtering-->
+                <section>
+                    <h4>Filter by Month</h4>
+                    <nav><!--As the filter is part of navigation!-->
+                        <ul>
+                            <li><a href="">Filter for January</a></li>
+                            <li><a href="">Filter for February</a></li>
+                            <li><a href="">Filter for March</a></li>
+                        </ul>
+                    </nav>
+                </section>
+                <section>
+                    <h4>Filter by Category</h4>
+                    <nav>
+                        <ul>
+                            <li><a href="">Puppies</a></li>
+                            <li><a href="">Dogs</a></li>
+                            <li><a href="">Cats</a></li>
+                            <li><a href="">Hedgehogs</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </aside>
+            <div>
+                <article>
+                    <header>
+                        <!--article (a self contained composition) header goes here :)-->
+                        <h2>Ten Amusing Facts About Dogs</h2>
+                        <h3>Read time: 5 minutes</h3>
+                        <img src="https://placebear.com/100/100" alt="a profile pic of a bear swimming">
+                    </header>
+                    <main><!--<p> = paragraph -->
+                        <p>Some text about dogs!</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur rem error eum at eius ab, labore a sapiente, consectetur laudantium deserunt inventore rerum libero fuga amet. Quis, molestias! Nesciunt sed veritatis, minima, assumenda temporibus delectus deleniti ullam praesentium dignissimos omnis reprehenderit repellat non accusamus aut quod obcaecati vel suscipit sapiente architecto. Delectus maxime impedit minima quas culpa neque dignissimos, perferendis debitis earum. Eveniet obcaecati in magnam deserunt expedita sit quia ex? Recusandae odio nulla autem explicabo iste magni deserunt hic, illum repellat? Asperiores praesentium labore veritatis et impedit. Aliquam distinctio dolor ipsam eos laborum. Qui id natus ullam atque eaque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id soluta obcaecati aliquid tempora totam officia animi neque autem? Porro enim expedita, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum unde molestiae, molestias ad vitae beatae dicta blanditiis! Repellat fuga possimus qui nulla consectetur pariatur vel quos facilis similique labore, ut eligendi accusantium numquam dignissimos voluptatum ea reprehenderit aliquam repellendus quia sapiente consequatur dolorum odit illum? Commodi tempora, corporis dicta libero placeat ipsam odit earum quaerat dolore eius facere aut architecto. Ut placeat soluta sunt tempore atque maiores itaque eos deleniti esse sint adipisci at commodi natus consequatur laboriosam totam unde quasi perspiciatis sed, voluptas modi voluptate obcaecati aperiam. Rem quasi omnis alias sed ex recusandae distinctio reiciendis repudiandae non cum.
+                    
+                        </p>
+                        <blockquote>
+                            "I LOVE PUPPIES!" - <cite>Zsolt, 2024</cite>
+                        </blockquote>
+                        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, tempora necessitatibus veniam ipsam fugit eum optio corrupti sint illum provident consequatur rem quis. Distinctio aliquid libero omnis tempora nesciunt neque beatae repellat delectus alias et, illum tenetur at similique magnam hic sapiente voluptates quasi iste dolores deserunt ipsam asperiores incidunt.</p>
+                    </main>
+                    <footer>
+                        <h3>Author: Natalie McMullen</h3>
+                        <img src="./natalieface.jpg" alt="a profile pic of natalie's face" style="max-height: 100px; max-width: 100px;">
+                        <h4>Last posted: 21-08-2024</h4><!--need programming to automte this, i.e. JavaScript-->
+                        <a href="https://www.brightnetwork.co.uk/" target="_blank">Author Profile</a> <!--target assigns where the link opens to-->
+                    </footer>
+                </article>
+            </div>
+        </div>
+    <hr><!--horizontal line-->
+    <h2>Sign up for my newsletter!</h2>
+    <form action="" method=""> <!--Two attributes-->
+        <label for="first_name">First Name: </label>
+        <input type="text" id="first_name" name="first_name" required> <!--a required field in the form-->
+        <br> <!--stacks fields vertically using a break-->
+        <label for="last_name">Last Name: </label>
+        <input type="text" id="last_name" name="last_name" required> <!--a required field in the form-->
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        <br>
+
+        <label for="favourite_animal">Favourite Animal:</label>
+        <input type="radio" name="favourite_animal" id="dog" value="dog">
+        <label for="dog">Dog</label>
+        <input type="radio" name="favourite_animal" id="cat" value="cat">
+        <label for="cat">Cat</label>
+        <input type="radio" name="favourite_animal" id="headgehog" value="headgehog">
+        <label for="headgehog">Hedgehog</label>
+        <br>
+
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="england">England</option>
+            <option value="scotland">Scotland</option>
+            <option value="wales">Wales</option>
+            <option value="northern_ireland">Northern Ireland</option>
+        </select>
+        <br>
+
+        <label for="bio">Biography</label>
+        <textarea name="bio" id="bio" cols="30" rows="5"></textarea> <!-- creates a sized textbox -->
+        <br>
+
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Subscribe to our newsletter!</label>
+        <br>
+
+        <input type="submit" value="Send!">
+    </form>
+    
+    </main>
+    
+    <footer><!--This is the footer for the <body>-->
+        <!--We are going to make two collumns, by using <divs>-->
+        <h2>BrightBlogSite</h2>
+        <section>
+            <nav>
+                <ul id="footer-ul">
+                    <div>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Careers</a></li>
+                    </div>
+                    <div>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="">Cookies</a></li>
+                    </div>
+                
+                </ul>
+            </nav>
+        </section>
+    </footer>
+</body>
+</html>

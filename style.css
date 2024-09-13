@@ -1,0 +1,131 @@
+body {
+    font-family: "Copse", sans-serif;
+    margin: 0px;
+    font-size: 1.8vw;
+    background-color: #f7bfb4;
+}
+/*# for id*/
+#logo {
+    text-align: center;
+    font-size: 5vw;
+    margin: 0px;
+    padding: 8px;
+    font-family: "Copse";
+    /* this makes use of the Copse font we added */
+    text-shadow: 2px 2px 8px #384748;
+    animation: sparkle 2s ease-in-out alternate;
+}
+@keyframes sparkle {
+    0% {
+        filter: brightness(1);
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+    50% {
+        filter: brightness(1.5);
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.5);
+    }
+}
+
+
+ul {
+    margin: 0px;
+}
+
+
+body > header {
+    background-color: #58656D90;
+    color: #8de2dc;
+    height: 12vh;
+    /* Using FlexBox to organise logo and nav elements */
+    /* moves elements horizontally together */
+    display: flex;
+    /* centers items in the flex box */
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* flex box for navigation elements */
+#nav-ul {
+    display: flex;
+}
+/* adding padding to individual nav elements */
+#nav-ul > li {
+    padding: 8px;
+    margin: 5px;
+}
+
+/* turning our two divs into a flexbox */
+#footer-ul {
+    display: flex;
+    list-style: none;
+}
+#footer-ul > div > li {
+    margin-left: 12px;
+}
+
+#footer-ul > div > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+body > header > nav > ul { 
+    /* removes hyperlink styling from links under BirghtBlog */ 
+    list-style: none;
+    text-decoration: none;
+}
+
+/*. for classk*/
+.navbutton {
+    text-decoration: none;
+    padding: 12px;
+    /* making the buttons */
+    border: 1px solid #f7bfb4;
+    color: black;
+    border-radius: 8%;
+}
+
+body > main article {
+    /* organises the margins and text width of the website - auto automatically adjusts the margins */
+    width: 85%;
+    margin: auto;
+
+}
+
+/* organising the articles & filtering */
+#main-content {
+    display: flex;
+    justify-content: space-around;
+}
+#main-content > div {
+    width: 80%;
+}
+#main-content aside {
+    width: 20%;
+    margin-left: 12px;
+}
+
+
+/* centering the form */
+form {
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+    margin-left: 4px;
+}
+
+
+
+body > footer {
+    background-color: #58656D90;
+    /* flexbox for footer */
+    display: flex;
+}
+
+
+/* edits all images */
+img {
+    border-radius: 50%
+}
+

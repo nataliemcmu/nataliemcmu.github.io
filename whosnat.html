@@ -1,0 +1,177 @@
+<!--Miscalanious Notes
+- Hover over tags to see definition
+- Use TAB to use emmet abbraviation
+- use lorem for a paragraph of text (type the number of words you'd like afterwards)
+- Different text tags, i.e. <blockquote>, <cite> allow text to be simply formatted
+- press the arrows on the left (by the line numbers) to collapse tags :)))
+
+Forms
+- Forms are usually processed by a seperate server. 
+- a 'model' is an element that pops up over the website
+- the label connects the text of a question in the form with the related box
+- the value is what text goes in the button or drop down menu
+- type="email" checks if the text is an email address
+- type="passowrd" hides the text being typed :)
+- type="radio" gives us a clickable 'radio button' (i.e. you can choose one answer only for the quesiton)
+- type="submit" creates a button to send the form off
+- you can link radio buttons to the same question by making sure the name="" is the same for each button
+- use 'select' and 'option' for a drop down selection
+- notice how the label text goes before some tags (like select) but after other tags (like text). This is due to which bit you want to show when you hover over or click the label
+- notice that when you send the form, the information being sent goes into the URL :)
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Copse&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Copse&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrightBlogSite</title>
+</head>
+
+<body>
+    <header id="main-header">
+        <!-- the content of the header (stuff at the top of the website) goes here :) -->
+        <h1><a  id="logo" href="index.html">Natalie Talks Shoegaze</a></h1> <!-- You could quickly make this section below with 'nav>ul>li*3>a'-->
+        <!--<h1> is the highest in the heirachy of header tags-->
+        <nav>
+            <!-- this is the navigation bar -->
+            <!-- this is using the list method (you can use unordered list or ordered list (ul or ol)) -->
+            <ul id="nav-ul">
+                <li> <!--List elements-->
+                    <a href="https://soundcloud.com/natalatalie" target="_blank" class="navbutton"> My music</a>
+                </li>
+                <li> 
+                    <a href="https://x.com/natalatalie_" target="_blank" class="navbutton">My Twitter</a> 
+                </li>
+                <li>
+                    <a href="https://genderkit.org.uk/" target="_blank" class="navbutton">Resources</a>
+                </li>
+            </ul> 
+        </nav>
+    </header>
+    <main>
+        <!-- main content of the website can go here :) -->
+        <div id="main-content">
+            <aside id="blognav"><!-- for filtering-->
+                <section>
+                    <h4>Music Blogs</h4>
+                    <nav><!--As the filter is part of navigation!-->
+                        <ul>
+                            <li><a href="MBVblog.html" class="blogbutton">MBV and the 'Wall of Sound'</a></li>
+                            <li><a href="Slowdiveblog.html" class="blogbutton">Who are Slowdive?</a></li>
+                        </ul>
+                    </nav>
+                </section>
+                <section>
+                    <h4>More</h4>
+                    <nav>
+                        <ul>
+                            <li><a href="whosnat.html" class="blogbutton">Who is Natalie?</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Shoegaze" target="_blank" class="blogbutton">Shoegaze Wiki</a></li>
+                            <li><a href="https://www.youtube.com/playlist?list=PLEXox2R2RxZLF0n8tVHnv7PtFtxQLElt1" target="_blank" class="blogbutton">Playlist</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </aside>
+            <div>
+                <article>
+                    <header>
+                        <!--article (a self contained composition) header goes here :)-->
+                        <h1 id="articletitle">About me, Natalie</h1>
+                        
+                        
+                    </header>
+                    <main><!--<p> = paragraph -->
+                    <div id="sidebyside">
+                        <p>
+                            My name is Natalie and I'm a trans woman from North Yorkshire. I first started listening to shoegaze music while studying music and sound recording at university in York when I was recommended the album 'EP's 1988-1991 and rare tracks' by My Bloody Valentine by a friend. There was something so cathartic about the sound of the songs. The undulating noise with soft etherial vocals felt new and lovely to me. I especially loved the song 'off your face', it just made me feel whole.
+                            <br><br>
+                            Unfortunately, due to the covid pandemic, my degree in music was cut short, and I instead opted to go down the route of maths and physics. In many ways, this was a blessing, as it meant my time playing and recording music was all to myself. I could be selfish and do what I really wanted to do. 
+                        </p>
+                        <img src="natalieguitar.jpg" alt="photo of nat playing guitar">
+                    </div>
+                        <p>
+                            I'd been playing guitar for around 4 years by this point. I'd picked guitar up after buying a beaten up £4 classical from a charity shop in my hometown. I was 14, and has been learning classical piano since the age of 6, and quite frankly, it was boring now. Listening to bands like slowdive, my bloody valentine, julie, ringo deathstar and computerwife at university really shaped how I played guitar.
+                        </p>
+                    <div id="sidebyside">
+                        <img src="natalieside.jpg" alt="one of my cover photos">
+                        <figcaption></figcaption>
+                        <p>
+                            I think something that doesn't get talked about enough is the harmony of shoegaze. Everyone talks about texture, but one of the fundamental elements to the texture of shoegaze is the use of extended chords, and I think this is something that quite a few new-age shoegazers miss out on.
+                            <br><br>
+                            Since finished university I have continued to play and record music, although I am yet to release any of my own compositions, just covers. One thing I really enjoy about the recording process is just messing around and taking risks, although this mindset has made me a bit of a perfectionist when it comes to how I want things to sound. I sometimes feel like a child painting, not knowing when to put down the brush and eventually the paper is just a mess of colours.
+                            </p>
+                        </div>
+                            <p>
+                            Recently I've been living with my partner without my electric guitar, and I tried creating a swirly, distorted sound with my acoustic - I think it turned out quite well. One thing I love about making covers is producing the cover photo - not that it really matters to anyone but me. I've always been inspired by music magazines and press photos, especially those from the 90's, and try to capture that in my cover photos.
+                        </p>
+                    </main>
+                    <footer id="author">
+                        
+                        <h4>Last posted: 21-08-2024</h4><!--need programming to automte this, i.e. JavaScript-->
+                        
+                    </footer>
+                    <form action="" method="" id="signup"> <!--Two attributes-->
+                        <h2>Sign up for my newsletter!</h2>
+                        <label for="first_name">First Name: </label>
+                        <input type="text" id="first_name" name="first_name" required> <!--a required field in the form-->
+                        <br> <!--stacks fields vertically using a break-->
+                        <label for="last_name">Last Name: </label>
+                        <input type="text" id="last_name" name="last_name" required> <!--a required field in the form-->
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                        <br>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password">
+                        <br>
+                
+                        <label for="updates" id="updates">Would you like to recieve article updates?:</label>
+                        <input type="radio" name="updates" id="" value="yes">
+                        <label for="yes">Yes please!</label>
+                        <input type="radio" name="updates" id="no" value="no">
+                        <label for="no">No thanks!</label>
+                        
+                        <br>
+                
+                        <label for="country">Country</label>
+                        <select name="country" id="country">
+                            <option value="england">England</option>
+                            <option value="scotland">Scotland</option>
+                            <option value="wales">Wales</option>
+                            <option value="northern_ireland">Northern Ireland</option>
+                        </select>
+                        <br>
+                        <input type="submit" value="Send!">
+                    </form>
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer id="mainfooter"><!--This is the footer for the <body>-->
+        <!--We are going to make two collumns, by using <divs>-->
+        <h3>Natalie's site for Couch to Coder</h3>
+        <section>
+            <nav>
+                <ul id="footer-ul">
+                    <div>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="whosnat.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </div>
+                    <div>
+                        <li><a href="https://soundcloud.com/natalatalie" target="_blank">Music</a></li>
+                        <li><a href="https://x.com/natalatalie_" target="_blank">Twitter</a></li>
+                    </div>
+                
+                </ul>
+            </nav>
+        </section>
+    </footer>
+</body>
+</html>

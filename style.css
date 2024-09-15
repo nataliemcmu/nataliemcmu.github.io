@@ -2,18 +2,26 @@ body {
     font-family: "Copse", sans-serif;
     margin: 0px;
     font-size: 1.8vw;
-    background-color: #f7c2cb;
+    background-color: rgba(255, 224, 198, 0.721);
+}
+body > main {
+    margin-top: 85px;
 }
 /*# for id*/
 #logo {
+    text-decoration: none;
+    color: #8dc2dc;
     text-align: center;
-    font-size: 5vw;
+    font-size: 4vw;
     margin: 0px;
     padding: 8px;
     font-family: "Copse";
     /* this makes use of the Copse font we added */
-    text-shadow: 2px 2px 8px #384748;
-    animation: sparkle 2s ease-in-out alternate;
+    text-shadow: 2px 2px 4px #384748;
+    animation: sparkle 5s ease-in-out alternate;
+}
+a:visited {
+    color: inherit;
 }
 @keyframes sparkle {
     0% {
@@ -22,19 +30,76 @@ body {
     }
     50% {
         filter: brightness(1.5);
-        text-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.5);
+        text-shadow: 0 0 20px rgba(248, 211, 219, 0.7), 0 0 30px rgba(255, 218, 185, 0.707);
     }
 }
 
-
-ul {
-    margin: 0px;
+p {
+    font-family: Helvetica, sans-serif;
+}
+#centertext {
+    text-align: center;
+    font-family: sans-serif;
+    font-style: italic;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+figcaption{
+    text-align: center;
+    color: peachpuff;
+    background-color: #4c6263;
 }
 
+blockquote {
+    color: rgba(4, 40, 46);
+}
+
+#welcome {
+    text-align: center;
+}
+
+#main-header {
+    position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+    z-index: 1000;
+}
+
+#articletitle {
+    text-align: center;
+}
+#articlesubtitle {
+    text-align: center;
+    color: #384748;
+}
+
+#blognav {
+    background-color: rgba(4, 40, 46, 0.64);
+    color: whitesmoke;
+    padding-left: 12px;
+}
+#blognav > section {
+    position:initial;
+}
+#blognav > section > nav > ul{
+    list-style:square;
+}
+#blognav > section > nav > ul > li{
+    margin-top: 30px;
+    margin-right: 10px;
+}
+#blognav > section > nav > ul > li > a{
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Makes the link color the same as the surrounding text */
+    font-weight: normal;
+}
+#blognav > section > h4 {
+    color:peachpuff;
+}
 
 body > header {
-    background-color: #58656D90;
-    color: #8dc2dc;
+    background-color: rgba(37, 69, 75);
     height: 12vh;
     /* Using FlexBox to organise logo and nav elements */
     /* moves elements horizontally together */
@@ -43,6 +108,8 @@ body > header {
     align-items: center;
     justify-content: space-around;
 }
+
+
 
 /* flex box for navigation elements */
 #nav-ul {
@@ -65,8 +132,10 @@ body > header {
 
 #footer-ul > div > li > a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
+
+
 
 body > header > nav > ul { 
     /* removes hyperlink styling from links under BirghtBlog */ 
@@ -79,9 +148,8 @@ body > header > nav > ul {
     text-decoration: none;
     padding: 12px;
     /* making the buttons */
-    border: 1px solid #f7bfb4;
+    border: 1px solid #6f9bb0;
     background-color: #8dc2dc;
-    color: black;
     border-radius: 10%;
 }
 
@@ -98,48 +166,105 @@ body > main article {
     justify-content: space-around;
 }
 #main-content > div {
-    width: 80%;
+    width: 78%;
 }
 #main-content aside {
-    width: 20%;
-    margin-left: 12px;
+    width: 22%;
 }
 
+#video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
 
+#video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
+#blogvideo {
+    width: 100%;
+}
+#author {
+    margin-bottom: 25px;
+}
+hr {
+    height: 10px;
+    background-color: peachpuff;
+}
 
-
+#sidebyside {
+    display: flex;
+    justify-content: space-between;
+}
+#sidebyside > p {
+    width: 52%;
+}
+#sidebyside > img {
+    width: 40%;
+    height: 40%;
+    border-radius: 5%;
+}
 
 
 
 body > footer {
-    background-color: #58656D90;
+    background-color: rgb(37, 69, 75);
+    color: peachpuff;
     /* flexbox for footer */
     display: flex;
     justify-content: space-evenly;
 }
 
 
-/* edits all images */
-img {
+/* edits my images */
+#natface {
     border-radius: 50%
+}
+#article-image {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    display: block;
+}
+
+#news {
+    text-align: center;
 }
 
 #signup {
-    justify-content: center;
     align-items: center;
+    margin: auto;
     width: 100%;
     max-width: 400px;
-    margin: auto;
     padding: 20px;
-    background-color: #8dc2dc;
+    background-color: rgba(4, 40, 46, 0.64);
+    color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+#signup > label {
+    margin-left: 20px;
+}
+
 #signup >  input{
     background-color: whitesmoke;
+    margin-left: 20px;
 }
 
 #updates {
     display: flex;
 }
+
+
+
